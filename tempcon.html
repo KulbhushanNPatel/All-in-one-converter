@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="min.css">
+    <link rel="stylesheet" href="tempcon.css">
+</head>
+
+<body>
+
+    <!-- -------------- NavBar -------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AllInOneConverter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Convert
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tempcon.html">TemperatureConverter</a></li>
+                            <li><a class="dropdown-item" href="weightcon.html">WeightConverter</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="lengthcon.html">LengthConverter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- -------x------- NavBar -------x------- -->
+
+    <!-- --------------- Forms --------------- -->
+    <div class="forms">
+        <div class="content">
+            <div class="text">
+                Converter Form 1
+            </div>
+            <form action="#">
+                <div class="field">
+                    <input type="text" name="cel" id="cel" onkeyup="celtkel()" placeholder="Celsius">
+                    <span class="fas fa-user"></span>
+                    <label> Celsius </label>
+                </div>
+                <br>
+                <div class="field">
+                    <input type="text" name="kel" id="kel" onkeyup="keltcel()" placeholder="Kelvin">
+                    <span class="fas fa-user"></span>
+                    <label> Kelvin </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                Converter Form 2
+            </div>
+            <form action="#">
+                <div class="field">
+                    <input type="text" name="cel" id="cel2" onkeyup="celtfar()" placeholder="Celsius">
+                    <span class="fas fa-user"></span>
+                    <label> Celsius </label>
+                </div>
+                <br>
+                <div class="field">
+                    <input type="text" name="far" id="far" placeholder="Fahrenheit" onkeyup="fartcel()">
+                    <span class="fas fa-user"></span>
+                    <label> Fahrenheit </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                Converter Form 3
+            </div>
+            <form action="#">
+                <div class="field">
+                    <input type="text" name="kel2" id="kel2" onkeyup="keltfar()" placeholder="Kelvin">
+                    <span class="fas fa-user"></span>
+                    <label> Kelvin </label>
+                </div>
+                <br>
+                <div class="field">
+                    <input type="text" name="far2" id="far2" placeholder="Fahrenheit" onkeyup="fartcel()">
+                    <span class="fas fa-user"></span>
+                    <label> Fahrenheit </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- -------x------- Forms --------x-------- -->
+
+</body>
+
+<script src="min.js">
+
+</script>
+<script src="tempcon.js"></script>
+
+</html>
